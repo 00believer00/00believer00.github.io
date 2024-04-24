@@ -1,0 +1,163 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Section styles */
+.plan-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px; /* Adjust padding */
+    background-color: #f9f9f9;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    position: relative; /* Position relative for absolute positioning of images */
+}
+
+.images img {
+    max-width: 250px; /* Increase image size */
+    margin: 0 10px;
+    border: 2px solid transparent; /* Add border */
+    transition: border-color 0.3s ease; /* Add transition */
+}
+
+.images img:hover {
+    border-color: #080700; /* Highlight border on hover */
+}
+
+.images img:nth-child(1) {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.images img:nth-child(2) {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.images img:nth-child(3) {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.explain {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.explain td {
+    padding: 20px;
+    border: 7px solid #f80c0c; /* Add border */
+    text-align: center;
+    transition: background-color 0.3s ease; /* Add transition */
+}
+
+.explain td:hover {
+    background-color: #a9f3b9; /* Highlight background on hover */
+}
+
+.explain h1 {
+    margin: 0;
+    font-size: 32px; /* Increase font size */
+    color: #333;
+}
+
+/* .explain .silver {
+    background-color: #9e9797;
+} */
+
+/* .explain .gold {
+    background-color: #ffa600;
+}
+
+.explain .platinum {
+    background-color: #00fff2;
+} */
+
+.photo {
+    text-align: center;
+    margin-top: 30px; /* Add margin */
+}
+
+.photo h1 {
+    font-size: 32px; /* Increase font size */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.photo img {
+    max-width: 250px; /* Increase image size */
+    margin: 10px;
+    border: 2px solid transparent; /* Add border */
+    transition: border-color 0.3s ease; /* Add transition */
+}
+
+.photo img:hover {
+    border-color: #ffd700; /* Highlight border on hover */
+}
+
+/* Button styles */
+.button {
+    padding: 15px 30px; /* Increase padding */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition */
+}
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 2; /* Reduce opacity to make the video translucent */
+}
+
+.plan-back {
+    position: relative; /* Ensure the container is positioned */
+    z-index: 1; /* Set a higher z-index to ensure the content is above the video */
+    background-color: rgba(249, 249, 249, 0.336); /* Adjust the background color with transparency */
+}
+
+
+.button:hover {
+    background-color: #5fc0f8; /* Bright color on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .images {
+        flex-wrap: wrap;
+    }
+
+    .images img {
+        margin-bottom: 20px;
+    }
+
+    .explain td {
+        font-size: 18px; /* Decrease font size */
+    }
+
+    .photo img {
+        max-width: 200px;
+    }
+}
